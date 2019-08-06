@@ -1,3 +1,6 @@
+# Purpose: In order to import math scores into database, must format data by flipping axis on Excel. 
+# Author: Erica Ching (eching@aimhigh.org)
+
 #! python3
 # automate.py - read TestQuestionID, StudentID, and TestScore from 'Math Pretest Francisco.xlsx' and copy it into 'test.xlsx' in separate columns 
 
