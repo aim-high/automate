@@ -1,3 +1,8 @@
+# Description: On a rolling basis throughout the summer, paper student applications are entered into Google Forms.
+#              This script automates creating and deleting columns which originally were done manually.
+# Purpose: Reformat paper student applications from Google Forms' export in order to import into student database. 
+# Author: Erica Ching (eching@aimhigh.org)
+
 import openpyxl
 from datetime import date
 
