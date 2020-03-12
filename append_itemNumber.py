@@ -5,6 +5,9 @@
 #!/usr/bin/python
 import sys
 
+print("Welcome to append_itemNumber!")
+print("Input tech name (i.e. 'AHiPad_'), amount of that category, and item number (i.e. 23, 09, 38). Output is concatenated tech name and number.")
+
 name = input("Name: ")
 num = int(input("How many items?: "))
 list = [];
