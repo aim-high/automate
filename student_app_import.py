@@ -15,7 +15,8 @@ from datetime import date
 now = date.today()
 now = now.strftime('%m-%d-%Y')
 
-wb = openpyxl.load_workbook('Student Import.xlsx')
+# Must update Google file's name when applicable
+wb = openpyxl.load_workbook('2020 Student Application - General (Responses).xlsx')
 ws = wb['Person']
 
 # Use excel's COLUMN function to find the corresponding column number
