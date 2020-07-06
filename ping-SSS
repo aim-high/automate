@@ -1,5 +1,5 @@
 /*
-After a form is submitted, script will copy and paste submission details to the corresponding Student Support Specialist (SSS) and email them with select submission details.
+After a form is submitted, script will copy and paste a row from Form Responses to the corresponding Student Support Specialist (SSS) tab within the same spreadsheet and email them with select submission details.
 Last Modified: 07/06/2020 by Erica Ching
 */
 
