@@ -9,7 +9,6 @@ function submitForm()
   let formResponses = form.getResponses();
   let rawResponses = SpreadsheetApp.openById(form.getDestinationId()).getSheetByName("Form Responses");
   
-  
   // getRange(row, column, numRows, numColumns)
   // get last row from spreadsheet
   const numRows = 1;
@@ -19,8 +18,7 @@ function submitForm()
   // region is in column B
   let region = responseRange.getValues()[0][1];
   Logger.log(`region: ${region}`);
-  
-  
+   
   // set destination sheet based on region value
   // designate email recipient
   if (region === "SF1 Ingleside" || region === "SF2 Excelsior" || region === "SF3 Haight/WA"){
@@ -49,7 +47,6 @@ function submitForm()
   let destinationRange = destination.getRange(destination.getLastRow() + 1, 1)
     responseRange.copyTo(destinationRange);
   responseRange.setBackground("light gray 2");
-  
   
   // Student information
   let studentName = responseRange.getValues()[0][4]; // column E
