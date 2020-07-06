@@ -26,14 +26,12 @@ function copyValues() {
   var dateHeaders = destinationSheet.getRange("F1:Y1");
   dateHeaders.setNumberFormat("MM/dd");
   
-  /*
   // background colors
   var week1 = destinationSheet.getRange("F1:I1");
   var week3 = destinationSheet.getRange("N1:Q1");
   var week5 = destinationSheet.getRange("V1:Y1");
   
-  week1.setBackground("light red 2");
-  week3.setBackground("light purple 2");
-  week5.setBackground("light cornflower blue 2");
-  */
+  week1.setBackground("#EB9899");
+  week3.setBackground("#B4A7D6");
+  week5.setBackground("#A4C2F4");
 }
