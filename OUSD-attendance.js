@@ -1,4 +1,11 @@
 function copyValues() {
+  
+  // don't run on weekend
+  var day = new Date();
+  if (day.getDay() > 5 || day.getDay() === 0) {
+    return;
+  }
+  
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var attendanceSheet = ss.getSheetByName("EB sites");
   var destinationSheet = ss.getSheetByName("OUSD/Oak");
