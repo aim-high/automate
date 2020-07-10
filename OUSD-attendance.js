@@ -42,3 +42,11 @@ function copyValues() {
   week3.setBackground("#B4A7D6");
   week5.setBackground("#A4C2F4");
 }
+
+// Add UI menu item to run copyValues script
+function onOpen(e) {
+  SpreadsheetApp.getUi()
+      .createMenu('AH@H')
+      .addItem('Copy and Paste', 'copyValues')
+      .addToUi();
+}
