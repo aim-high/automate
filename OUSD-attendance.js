@@ -50,3 +50,15 @@ function onOpen(e) {
       .addItem('Copy and Paste', 'copyValues')
       .addToUi();
 }
+
+// Creates trigger to run copyValues() anytime between 2:45pm-3:15pm window
+// run once to add the new trigger
+function newTrigger() {
+  ScriptApp.newTrigger("copyValues")
+    .timeBased()
+    .atHour(15)
+    .everyMinutes(1)
+    .everyDays(1)
+    .inTimezone("America/Los_Angeles")
+    .create(); 
+}
