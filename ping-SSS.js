@@ -1,6 +1,6 @@
 /*
-After a form is submitted, script will copy and paste a row from Form Responses to the corresponding Student Support Specialist (SSS) tab within the same spreadsheet and email them with select submission details.
-Last Modified: 07/06/2020 by Erica Ching
+After a form is submitted, script will copy and paste a row from Form Responses to the corresponding Student Support Specialist (SSS) tab within the same spreadsheet and email SSS with select submission details, including the spreadsheet link.
+Last Modified: 07/15/2020 by Erica Ching
 */
 
 function submitForm() 
@@ -63,7 +63,8 @@ function submitForm()
   var body = `Hi ${greeting}!
     
 ${studentName}, from ${region} has been referred to a Student Support Specialist. They were referred for the following reason(s): ${reason}.
-    
+
+To view spreadsheet and more details, visit ${url}
 This notification was sent via automatic email.`;
   MailApp.sendEmail(recipients, subject, body);
 
