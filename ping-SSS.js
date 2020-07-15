@@ -54,6 +54,10 @@ function submitForm()
   let studentContact = responseRange.getValues()[0][7]; // column H
   let studentInfo = responseRange.getValues()[0][9]; // column J
   
+  // url
+  var tabUrl = destination.getSheetId(); // returns gid (int)
+  var url = SpreadsheetApp.openById(form.getDestinationId()).getUrl() + "#gid=" + tabUrl;
+  
   // email
   var subject = `New SSS Student Referral Form`;
   var body = `Hi ${greeting}!
