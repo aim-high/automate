@@ -18,6 +18,8 @@ while num != 0:
 	list.append(name + item)
 	num = num - 1
 
+list.sort()	
+	
 i = 0;
 for numLoop in list:
 	print(list[i])
